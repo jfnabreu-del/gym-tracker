@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import Link from "next/link"
 
 export default function Home() {
   const [clientName, setClientName] = useState('')
@@ -42,6 +43,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center p-8">
       <div className="bg-zinc-900 p-8 rounded-3xl w-full max-w-xl space-y-5">
+
+        {/* HEADER */}
         <div>
           <h1 className="text-4xl font-bold">
             PT RM Tracker
@@ -52,6 +55,15 @@ export default function Home() {
           </p>
         </div>
 
+        {/* BOTÃO DASHBOARD */}
+        <Link
+          href="/dashboard"
+          className="block text-center bg-zinc-700 hover:bg-zinc-600 transition rounded-2xl p-3 font-semibold"
+        >
+          Ir para Dashboard 📊
+        </Link>
+
+        {/* INPUTS */}
         <input
           placeholder="Cliente"
           value={clientName}
@@ -96,6 +108,7 @@ export default function Home() {
         >
           Guardar Registo
         </button>
+
       </div>
     </main>
   )
