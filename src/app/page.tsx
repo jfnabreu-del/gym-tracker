@@ -47,11 +47,11 @@ export default function Home() {
         {/* HEADER */}
         <div>
           <h1 className="text-4xl font-bold">
-            PT RM Tracker
+            Registo de Cargas
           </h1>
 
           <p className="text-zinc-400 mt-2">
-            Novo registo de treino
+            Personal Trainer José Abreu
           </p>
         </div>
 
