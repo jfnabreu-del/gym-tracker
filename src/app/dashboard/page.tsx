@@ -80,7 +80,7 @@ export default function Dashboard() {
         <div className="mt-4 flex gap-3 flex-wrap">
           {/* CLIENTE */}
           <select
-            className="border p-2 rounded"
+            className="bg-black text-white border border-zinc-700 p-2 rounded"
             value={clientFilter}
             onChange={(e) => setClientFilter(e.target.value)}
           >
@@ -95,7 +95,7 @@ export default function Dashboard() {
 
           {/* EXERCÍCIO */}
           <select
-            className="border p-2 rounded"
+            className="bg-black text-white border border-zinc-700 p-2 rounded"
             value={exerciseFilter}
             onChange={(e) => setExerciseFilter(e.target.value)}
           >
